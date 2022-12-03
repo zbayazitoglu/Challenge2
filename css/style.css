@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: darkcyan;
+  color: white;
+}
+
+#menu-container {
+  background-color: grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 5px solid black;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+a {
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  padding-left: 50px;
+}
+
+h2 {
+  text-decoration: underline ;
+}
+
+.page-section {
+  background-color: grey;
+  width: 80%;
+  padding: 20px;
+  margin: 20px;
+}
+
+#about {
+  height: 400px;
+}
+
+#info {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+#my-pic {
+  padding-right: 20px;
+  border-radius: 50%;
+}
+
+#banner{
+  width: 100%;
+  height: 200px;
+  border-bottom: 5px solid black;
+}
+
+.page-wrapper {
+  margin-left: 200px;
+}
+
+#work-container {
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "sms sms"
+  "crm im"
+  "ts dvs";
+
+}
+
+#sms {
+  grid-area: sms;
+}
+
+#crm {
+  grid-area: crm;
+}
+
+#im {
+  grid-area: im;
+}
+
+#ts {
+  grid-area: ts;
+}
+
+#dvs {
+  grid-area: dvs;
+}
+
+.img-set {
+  width: 100%;
+  height: 100%;
+}
+
+#work-container img {
+  border: 3px solid darkcyan
+}
+
+#work-container p {
+  position: absolute;
+  width: 180px;
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 170px;
+  padding-top: 10px; 
+  z-index: 100;
+  background-color: grey;
+  color: black;
+  border: 3px solid black;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.contact { 
+  padding: 20px;
+  height: 170px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #work-container {
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "sms"
+    "crm" 
+    "im"
+    "ts" 
+    "dvs";
+  
+  }
+  body {
+    background-color: lightblue;
+  }
+}
