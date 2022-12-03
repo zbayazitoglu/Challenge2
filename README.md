@@ -10,7 +10,8 @@ Here are the functionallity that you can find on the page:
 * When one of the links in the navigation is clicked then the UI scrolls to the corresponding section.
 * When viewing the section about my work then the section contains titled images of my applications
 * When presented with the my first application then that application's image is larger in size than the others
-* When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport.
+* When images of the applications are clicked then the user is taken to that deployed application
+* When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport
 
 
 
